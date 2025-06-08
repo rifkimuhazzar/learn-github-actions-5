@@ -11,8 +11,8 @@ env:
 
 jobs:
   test:
+    environment: testing
     env:
-      environment: testing
       MONGODB_CLUSTER_ADDRESS: learn-github-actions.pelqbrc.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
